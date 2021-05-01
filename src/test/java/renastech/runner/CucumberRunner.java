@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
     @CucumberOptions(
 
            features = "src/test/resources",
-                   glue = "/renastech/stepsDefinitions",
-            dryRun=true
-            ta
+                   glue = "renastech/stepDefinitions",
+            dryRun=false
+
 
     )
    public class CucumberRunner {
