@@ -12,11 +12,16 @@ import org.junit.runner.RunWith;
 
            features = "src/test/resources",
                    glue = "renastech/stepDefinitions",
-            dryRun=false
-
+                   dryRun=false,
+                    tags =   "@TC_11"
 
     )
    public class CucumberRunner {
 
 
 }
+  //Feature file
+// runner class
+//step definition
+//utils pack (Browserutils,Driver)
+// pom .xlm star whit this one
