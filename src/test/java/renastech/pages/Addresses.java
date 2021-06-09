@@ -84,6 +84,7 @@ public class Addresses extends BrowserUtils  {
     public void setAge (String age1){
         staticWait(2);
         age.sendKeys(age1);
+        waitEnterText(age,age1);
 
 
     }
@@ -127,31 +128,7 @@ public void setCity(String cityName){
         staticWait(1);
         submitButton.click();
     }
-//public void setState(String stateName){
-//    wait(2);
-//    Select select = new Select(state);
-//    select.selectByVisibleText(stateName);
-//
-//
-//}
-//public void setZipcode(String zipcodeName){
-//    wait(1);
-//    zipcode.sendKeys(zipcodeName);
-//
-//}
-//public void setCountry (String countryName){
-//    wait(2);
-//    country.click();
-//}
-//public void setBirthday (String birthdayDay){
-//    wait(2);
-//    birthday.sendKeys(birthdayDay);
-//}
-//public void setAge (String age1){
-//    wait(2);
-//    age.sendKeys(age1);
-//
-//}
+
 
 
 

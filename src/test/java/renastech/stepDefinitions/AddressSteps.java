@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import renastech.pages.Addresses;
 import renastech.utils.BrowserUtils;
+import renastech.utils.ConfigurationsReader;
 import renastech.utils.Driver;
 
 import java.util.List;
@@ -20,11 +21,13 @@ public class AddressSteps extends BrowserUtils {
          driver.get("http://a.testaddressbook.com/");
         driver.findElement(By.id("sign-in")).click();
         staticWait(3);
-        WebElement email= driver.findElement(By.xpath("//input[@type='email']"));
-        email.sendKeys("erk@gmail.com");
+      //  WebElement email= driver.findElement(By.xpath("//input[@type='email']"));
+      //  email.sendKeys("erk@gmail.com");
+        driver.findElement(By.xpath("//input[@type='email']")).sendKeys(ConfigurationsReader.getProperties("username"));
         staticWait(3);
-        WebElement password =driver.findElement(By.id("session_password"));
-        password.sendKeys("erk@gmail.com");
+       // WebElement password =driver.findElement(By.id("session_password"));
+       // password.sendKeys("erk@gmail.com");
+        driver.findElement(By.id("session_password")).sendKeys(ConfigurationsReader.getProperties("password"));
         staticWait(3);
 
         WebElement signin= driver.findElement(By.xpath("//input[@type='submit']"));

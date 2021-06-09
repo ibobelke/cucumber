@@ -122,6 +122,7 @@ Feature: There Will be smart bear website Scenarios
       |commonIntrest|Dancing  |
       |Note         | fake address|
     And  The user wants to create an address
+
   @TC_11
   Scenario: Enter all address fields
     Given The user wants to sign
@@ -130,5 +131,4 @@ Feature: There Will be smart bear website Scenarios
     And The user wants to enter addresses details as list
       |FistName |  LastName|  Address1    |Address2  |City   |State   |ZipCode | Country| Birthday |Age|
       |ibo      | belke    |  11 fake st  |11 fake st|Lincoln|Nebraska|35464   |Canada  |10/11/1999|99|
-
     And  The user wants to create an address

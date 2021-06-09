@@ -2,7 +2,6 @@ package renastech.stepDefinitions;
 
 import org.junit.Before;
 import renastech.utils.BrowserUtils;
-import renastech.utils.Driver;
 
 import java.util.concurrent.TimeUnit;
 

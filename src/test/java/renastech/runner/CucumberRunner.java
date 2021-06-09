@@ -1,5 +1,6 @@
 package renastech.runner;
 
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -12,8 +13,8 @@ import org.junit.runner.RunWith;
 
            features = "src/test/resources",
                    glue = "renastech/stepDefinitions",
-                   dryRun=false,
-                    tags =   "@TC_11"
+                   dryRun= false,
+                    tags = "@TC_11"
 
     )
    public class CucumberRunner {
